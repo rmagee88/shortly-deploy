@@ -1,5 +1,6 @@
 var db = require('../config');
 var crypto = require('crypto');
+var User = mongoose.model('Urls', db.UrlsSchema);
 
 var Link = db.Model.extend({
   tableName: 'urls',
