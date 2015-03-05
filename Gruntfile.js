@@ -3,13 +3,16 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
-      dist: {
+      js: {
         src: [
-          './public/client/*.js',
-          './public/lib/*.js'
+          './public/lib/handlebars.js',
+          './public/lib/jquery.js',
+          './public/lib/underscore.js',
+          './public/lib/backbone.js',
+          './public/client/*.js'
         ],
         dest: './public/production.js'
-      }
+      },
     },
 
     mochaTest: {
