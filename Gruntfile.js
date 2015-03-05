@@ -115,8 +115,7 @@ module.exports = function(grunt) {
     'mochaTest'
   ]);
 
-  grunt.registerTask('build', [
-  ]);
+  grunt.registerTask('build', ['default']);
 
   grunt.registerTask('upload', function(n) {
     if(grunt.option('prod')) {
